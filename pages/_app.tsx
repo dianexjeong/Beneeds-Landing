@@ -1,6 +1,33 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from "next/app";
+import GlobalStyle from "~/@styles/GlobalStyle";
+import { Weblayout } from "~/@components/template";
+import { Navigation } from "~/@components/molecules";
+import styled from "styled-components";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+declare global {
+  interface Window {
+    daum: any;
+  }
+  const daum: any;
 }
+
+const App = ({ Component, pageProps }: AppProps) => {
+  return (
+    <>
+      <Weblayout>
+        <GlobalStyle />
+        <Navigation companyName="ABC 회사" />
+        <InnerContainer>
+          <Component {...pageProps} />
+        </InnerContainer>
+      </Weblayout>
+    </>
+  );
+};
+
+export default App;
+
+const InnerContainer = styled.div`
+  max-width: 800px;
+  margin: auto;
+`;
