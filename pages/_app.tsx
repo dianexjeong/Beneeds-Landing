@@ -16,7 +16,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Weblayout>
         <GlobalStyle />
-        <Navigation companyName="ABC 회사" />
+        <Navigation />
         <InnerContainer>
           <Component {...pageProps} />
         </InnerContainer>
