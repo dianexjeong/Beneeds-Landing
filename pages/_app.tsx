@@ -28,6 +28,5 @@ const App = ({ Component, pageProps }: AppProps) => {
 export default App;
 
 const InnerContainer = styled.div`
-  max-width: 800px;
   margin: auto;
 `;

@@ -38,9 +38,12 @@ export const Navigation = () => {
 };
 
 const Bar = styled.header`
-  width: 100%;
+  width: 100vw;
   height: 53.33px;
   box-shadow: 0px 2.66667px 8px rgba(0, 0, 0, 0.08);
+  background: white;
+  position: fixed;
+  z-index: 20;
 `;
 
 const InnerContainer = styled.div`

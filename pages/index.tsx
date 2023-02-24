@@ -1,7 +1,9 @@
+import { Section1 } from "~/@components/organisms";
+
 const Home = () => {
   return (
     <>
-      <p>멋드러진 랜딩 페이지</p>
+      <Section1 />
     </>
   );
 };

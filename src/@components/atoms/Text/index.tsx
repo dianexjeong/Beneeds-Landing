@@ -12,6 +12,8 @@ interface TextProps extends HTMLAttributes<HTMLSpanElement> {
   font?: string;
   height?: number;
   cursor?: string;
+  background?: string;
+  gradient?: boolean;
 }
 
 export const Text = ({
@@ -22,6 +24,8 @@ export const Text = ({
   font = "Pretendard Variable",
   height = 120,
   cursor = "auto",
+  background,
+  gradient = false,
   text,
   ...rest
 }: TextProps) => {
@@ -34,6 +38,8 @@ export const Text = ({
       font={font}
       height={height}
       cursor={cursor}
+      background={background}
+      gradient={gradient}
       {...rest}
     >
       {text}
@@ -41,7 +47,10 @@ export const Text = ({
   );
 };
 
-type StyleProps = Pick<TextProps, "size" | "weight" | "color" | "spacing" | "font" | "height" | "cursor">;
+type StyleProps = Pick<
+  TextProps,
+  "size" | "weight" | "color" | "spacing" | "font" | "height" | "cursor" | "background" | "gradient"
+>;
 
 const StyledText = styled.span<StyleProps>`
   font-size: ${({ size }) => size}px;
@@ -51,4 +60,12 @@ const StyledText = styled.span<StyleProps>`
   line-height: ${({ height }) => height}%;
   font-family: ${({ font }) => font};
   cursor: ${({ cursor }) => cursor};
+  background: ${({ background }) => background};
+  ${({ gradient }) =>
+    gradient
+      ? `-webkit-background-clip: text;
+  -webkit-text-fill-color:transparent;
+  background-clip: text;
+  text-fill-color:transparent;`
+      : null};
 `;
