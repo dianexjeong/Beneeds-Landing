@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Flex, Text, LinkBox } from "~/@components/atoms";
+import { Flex, Text } from "~/@components/atoms";
+import Image from "next/image";
 
 export const Navigation = () => {
   const comingSoon = () => {
@@ -11,7 +12,7 @@ export const Navigation = () => {
       <Flex justify="center">
         <InnerContainer>
           <Flex direction="row" justify="space-between">
-            <LinkBox src={"/logo.svg"} alt={"benefit logo"} href={"/"} width={60} height={13} />
+            <Image src={"/logo.svg"} alt={"Beneeds logo"} width={60} height={13} />
             <Flex direction="row" gap={16} justify="flex-end">
               <Text
                 text="로그인"
