@@ -1,10 +1,18 @@
 import styled from "styled-components";
+import { Text, Flex, Space } from "~/@components/atoms";
+import palette from "~/@styles/colors";
 
 export const Section8 = () => {
   return (
     <>
       <Bg>
-        <InnerContainer></InnerContainer>
+        <InnerContainer>
+          <Flex justify="flex-start" align="flex-start">
+            <Text text="쉽고 편하게," color={palette.Navy200} size={36} weight={600} height={160} />
+            <Text text="간단한 베니즈 복지 설정 방법" color={palette.Navy200} size={36} weight={600} height={160} />
+            <Space margin="46px 0px 0px 0px" />
+          </Flex>
+        </InnerContainer>
       </Bg>
     </>
   );
