@@ -1,7 +1,6 @@
 import type { AppProps } from "next/app";
 import GlobalStyle from "~/@styles/GlobalStyle";
 import { Weblayout } from "~/@components/template";
-import { Navigation } from "~/@components/molecules";
 import styled from "styled-components";
 
 declare global {
@@ -16,7 +15,7 @@ const App = ({ Component, pageProps }: AppProps) => {
     <>
       <Weblayout>
         <GlobalStyle />
-        <Navigation />
+
         <InnerContainer>
           <Component {...pageProps} />
         </InnerContainer>
