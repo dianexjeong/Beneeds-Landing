@@ -56,6 +56,7 @@ const Bg = styled.div`
 `;
 
 const InnerContainer = styled.div`
-  width: 800px;
+  width: 62.5vw;
+  min-width: 800px;
   height: 100%;
 `;

@@ -48,7 +48,8 @@ const Bar = styled.header`
 
 const InnerContainer = styled.div`
   position: relative;
-  width: 800px;
+  width: 62.5vw;
+  min-width: 800px;
   height: 100%;
 `;
 
