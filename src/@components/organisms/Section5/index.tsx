@@ -14,7 +14,7 @@ export const Section5 = () => {
             <Text text="효율적인 복지를 위해" size={32} color={palette.Navy200} weight={600} height={160} />
             <Space margin="26px 0px 0px 0px" />
           </Flex>
-          <Flex direction="row" height="" gap={13} justify="space-between">
+          <Flex direction="row" height="" gap={13} justify="center">
             <CardVertical>
               <div style={{ width: "100%", height: "100%" }}>관련 아이콘/사진/목업</div>
               <Flex height="" justify="flex-start" align="flex-start">
