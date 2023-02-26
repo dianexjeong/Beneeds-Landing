@@ -7,12 +7,13 @@ export interface BenefitProps extends HTMLAttributes<HTMLDivElement> {
   subtitle: string;
   title: string;
   provide_com: string;
-  summary: string;
+  summary1: string;
+  summary2?: string;
   bg_img?: string;
   detail_info_img?: string;
 }
 
-export const Benefit = ({ subtitle, title, provide_com, summary, bg_img }: BenefitProps) => {
+export const Benefit = ({ subtitle, title, provide_com, summary1, summary2, bg_img }: BenefitProps) => {
   return (
     <>
       <Card>
@@ -28,7 +29,7 @@ export const Benefit = ({ subtitle, title, provide_com, summary, bg_img }: Benef
               <Flex direction="column" justify="flex-start" align="flex-start" gap={17} height="">
                 <Space margin="10px 0px 0px 0px" />
                 <Flex direction="row" gap={45} width="" height="">
-                  <Text text="제공업체" size={13.5} weight={600} spacing={-0.5} height={140} color={palette.Gray600} />
+                  <Text text="제공 업체" size={13.5} weight={600} spacing={-0.5} height={140} color={palette.Gray600} />
                   <Text
                     text={`${provide_com}`}
                     size={13.5}
@@ -38,16 +39,30 @@ export const Benefit = ({ subtitle, title, provide_com, summary, bg_img }: Benef
                     color={palette.Gray800}
                   />
                 </Flex>
-                <Flex direction="row" gap={45} width="" height="">
+                <Flex direction="row" gap={45} width="" height="" justify="flex-start" align="flex-start">
                   <Text text="관리 주기" size={13.5} weight={600} spacing={-0.5} height={140} color={palette.Gray600} />
-                  <Text
-                    text={`${summary}`}
-                    size={13.5}
-                    weight={400}
-                    height={140}
-                    spacing={-0.5}
-                    color={palette.Gray800}
-                  />
+                  <Flex height="" width="" justify="flex-start" align="flex-start">
+                    <Text
+                      text={`${summary1}`}
+                      size={13.5}
+                      weight={400}
+                      height={140}
+                      spacing={-0.5}
+                      color={palette.Gray800}
+                    />
+                    {summary2 ? (
+                      <Text
+                        text={`${summary2}`}
+                        size={13.5}
+                        weight={400}
+                        height={140}
+                        spacing={-0.5}
+                        color={palette.Gray800}
+                      />
+                    ) : (
+                      <></>
+                    )}
+                  </Flex>
                 </Flex>
               </Flex>
             </DetailContainer>
@@ -76,8 +91,8 @@ const Line = styled.div`
 `;
 
 const DetailContainer = styled.div<{ src: string }>`
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -85,23 +100,10 @@ const DetailContainer = styled.div<{ src: string }>`
   padding-left: 27px;
   background: linear-gradient(
       74.83deg,
-      #ffffff 18.69%,
-      rgba(255, 255, 255, 0.901596) 65.02%,
+      #ffffff 58.69%,
+      rgba(255, 255, 255, 0.901596) 75.02%,
       rgba(255, 255, 255, 0) 136.23%
     ),
-    url(${({ src }) => src}) no-repeat center right;
-  border-radius: 0px 0px 13.5px 0px;
-`;
-
-const ImageContainer = styled.div<{ src: string }>`
-  aspect-ratio: 223/150;
-  height: 145px;
-  background: linear-gradient(
-      74.83deg,
-      #ffffff 18.69%,
-      rgba(255, 255, 255, 0.901596) 65.02%,
-      rgba(255, 255, 255, 0) 136.23%
-    ),
-    url(${({ src }) => src}) no-repeat center right;
+    url(${({ src }) => src}) no-repeat top right;
   border-radius: 0px 0px 13.5px 0px;
 `;
