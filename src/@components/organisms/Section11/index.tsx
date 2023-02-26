@@ -12,7 +12,7 @@ export const Section11 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 170vh;
+  height: 160vh;
   min-height: 1062px;
   display: flex;
   flex-direction: row;
