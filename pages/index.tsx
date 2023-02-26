@@ -9,6 +9,7 @@ import {
   Section7,
   Section8,
   Section9,
+  Section10,
 } from "~/@components/organisms";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
       <Section7 />
       <Section8 />
       <Section9 />
+      <Section10 />
     </>
   );
 };
