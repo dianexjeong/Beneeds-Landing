@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Flex } from "~/@components/atoms";
+import { Flex, Space, Text } from "~/@components/atoms";
 import { Benefit } from "~/@components/molecules";
 
 export const Section9 = () => {
@@ -7,6 +7,18 @@ export const Section9 = () => {
     <>
       <Bg>
         <InnerContainer>
+          <Flex height="">
+            <Text text="직원들은 복지를" weight={600} size={32} color="black" height={140} />
+            <Text text="달마다 선택해서 받아요" weight={600} size={32} color="black" height={140} />
+            <Space margin="24px 0px 0px 0px" />
+            <span>
+              <Text text="직원 한 명당 5만원의 금액으로 " weight={500} size={19} color="black" height={140} />
+              <Text text="각자 원하는 복지" weight={600} size={19} color="#767DEE" height={140} />
+              <Text text="를 누릴 수 있도록" weight={500} size={19} color="black" height={140} />
+            </span>
+            <Space margin="60px 0px 0px 0px" />
+          </Flex>
+
           <Flex direction="row" justify="flex-start" wrap="wrap" gap={10} height="">
             <Benefit
               subtitle="퇴근 후에도 깨끗한 환경을 위해"
@@ -52,8 +64,8 @@ export const Section9 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 170vh;
-  min-height: 901px;
+  height: 196vh;
+  min-height: 1227px;
   display: flex;
   flex-direction: row;
   justify-content: center;
