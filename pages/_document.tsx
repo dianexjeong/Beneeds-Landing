@@ -38,11 +38,8 @@ class MyDocument extends Document {
             property="og:image"
             content="https://user-images.githubusercontent.com/50395394/214743809-126504cf-2bf6-4b34-8dac-3fda14043891.png"
           />
-          <meta property="og:title" content="우리 회사 직원을 위한 선물 복지 솔루션, 기프티핏" />
-          <meta
-            property="og:description"
-            content="매번 같은 선물은 이제 그만! 복지 담당자와 직원 모두의 만족도를 위한 기업용 선물복지 서비스"
-          />
+          <meta property="og:title" content="원하는 복지를 고르는 새로운 복지 관리의 시작, 베니즈" />
+          <meta property="og:description" content="직원이 원하는 복지를 받아볼 수 있도록, 새로운 복지 관리의 첫 걸음" />
           <link rel="icon" href="/favicon.ico" />
           <link
             rel="stylesheet"
