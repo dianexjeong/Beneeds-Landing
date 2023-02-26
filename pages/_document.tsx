@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://user-images.githubusercontent.com/50395394/214743809-126504cf-2bf6-4b34-8dac-3fda14043891.png"
+            content="https://user-images.githubusercontent.com/77887276/221410661-1fc0da73-b974-4b97-815f-7871b7c24df9.png"
           />
           <meta property="og:title" content="원하는 복지를 고르는 새로운 복지 관리의 시작, 베니즈" />
           <meta property="og:description" content="직원이 원하는 복지를 받아볼 수 있도록, 새로운 복지 관리의 첫 걸음" />
