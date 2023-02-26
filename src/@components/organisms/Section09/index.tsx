@@ -18,8 +18,7 @@ export const Section9 = () => {
             </span>
             <Space margin="60px 0px 0px 0px" />
           </Flex>
-
-          <Flex direction="row" justify="flex-start" wrap="wrap" gap={10} height="">
+          <Flex direction="row" justify="center" align="center" wrap="wrap" gap={10} height="" width="">
             <Benefit
               subtitle="퇴근 후에도 깨끗한 환경을 위해"
               title="집 청소 이용권"
@@ -66,14 +65,18 @@ const Bg = styled.div`
   width: 100vw;
   height: 196vh;
   min-height: 1227px;
+  max-height: 1380px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 163.25px 0px;
 `;
 
 const InnerContainer = styled.div`
   width: 62.5vw;
   min-width: 800px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

@@ -46,16 +46,20 @@ const Bg = styled.div`
   width: 100vw;
   height: 300vh;
   min-height: 1778px;
+  max-height: 2000px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 163.25px 0px;
 `;
 
 const InnerContainer = styled.div`
   width: 62.5vw;
   min-width: 800px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 const MockupContainer = styled.div<{ url: string }>`

@@ -9,8 +9,8 @@ export const Section1 = () => {
       <Space height="54px" />
       <Bg>
         <InnerContainer>
-          <Flex direction="column" align="flex-start" justify="flex-start">
-            <Space margin="131px 0px 0px 0px" />
+          <Space margin="131px 0px 0px 0px" />
+          <Flex direction="column" align="flex-start" justify="center" height="">
             <Text text="새로운 복지의 시작" size={12} weight={500} color="#767DEE" height={160} />
             <Space margin="8px 0px 0px 0px" />
             <span>
@@ -35,7 +35,7 @@ export const Section1 = () => {
             />
             <Text text="새로운 복지 관리의 첫 걸음" size={16} weight={500} height={160} color={palette.Gray800} />
             <Space margin="113px 0px 0px 0px" />
-            <Flex direction="row" align="flex-start" justify="center">
+            <Flex direction="row" align="flex-end" justify="center" height="">
               <NotifyButton background={`${palette.Navy200}`} textColor={`${palette.White}`} />
             </Flex>
           </Flex>
@@ -53,6 +53,7 @@ const Bg = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 `;
 
 const InnerContainer = styled.div`

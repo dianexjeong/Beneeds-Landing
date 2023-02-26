@@ -39,6 +39,7 @@ const Bg = styled.div`
   width: 100vw;
   height: 53vh;
   min-height: 334px;
+  max-height: 400px;
   display: flex;
   flex-direction: row;
   background: linear-gradient(102.17deg, rgba(144, 146, 254, 0.65) 37.87%, rgba(145, 166, 255, 0.65) 72.69%);

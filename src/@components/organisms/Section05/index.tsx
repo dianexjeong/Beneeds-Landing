@@ -67,6 +67,7 @@ const Bg = styled.div`
   width: 100vw;
   height: 178vh;
   min-height: 1140px;
+  max-height: 1250px;
   display: flex;
   flex-direction: row;
   justify-content: center;

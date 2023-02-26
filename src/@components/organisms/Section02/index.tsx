@@ -7,8 +7,7 @@ export const Section2 = () => {
     <>
       <Bg>
         <InnerContainer>
-          <Flex direction="column" align="flex-start" justify="flex-start">
-            <Space margin="103.5px 0px 0px 0px" />
+          <Flex direction="column" align="flex-start" justify="center">
             <Text text="정답이 없는 직원 복지.." color={palette.Navy200} weight={600} size={36} height={160} />
             <Text text="이런 고민 해본 적 있으신가요?" color={palette.Navy200} weight={600} size={36} height={160} />
             <Space margin="29.13px 0px 0px 0px" />
