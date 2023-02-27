@@ -10,8 +10,7 @@ export const Weblayout = ({ children }: Iprops) => {
 };
 
 const WeblayoutContainer = styled.div`
-  max-width: 1920px;
-  margin: 0 auto;
+  margin: auto;
   -ms-overflow-style: none; /* 인터넷 익스플로러 */
   scrollbar-width: none; /* 파이어폭스 */
 

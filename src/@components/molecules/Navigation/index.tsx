@@ -8,33 +8,35 @@ export const Navigation = () => {
   };
 
   return (
-    <Bar>
-      <Flex justify="center">
-        <InnerContainer>
-          <Flex direction="row" justify="space-between">
-            <Image src={"/logo.svg"} alt={"Beneeds logo"} width={79} height={14.22} />
-            <Flex direction="row" gap={16} justify="flex-end">
-              <Text
-                text="로그인"
-                size={14}
-                weight={500}
-                color="#4E5059"
-                cursor="pointer"
-                onClick={() => comingSoon()}
-              />
-              <Text
-                text="회원가입"
-                size={14}
-                weight={500}
-                color="#4E5059"
-                cursor="pointer"
-                onClick={() => comingSoon()}
-              />
+    <Flex width="" height="" justify="flex-start">
+      <Bar>
+        <Flex justify="center">
+          <InnerContainer>
+            <Flex direction="row" justify="space-between">
+              <Image src={"/logo.svg"} alt={"Beneeds logo"} width={79} height={14.22} />
+              <Flex direction="row" gap={16} justify="flex-end">
+                <Text
+                  text="로그인"
+                  size={14}
+                  weight={500}
+                  color="#4E5059"
+                  cursor="pointer"
+                  onClick={() => comingSoon()}
+                />
+                <Text
+                  text="회원가입"
+                  size={14}
+                  weight={500}
+                  color="#4E5059"
+                  cursor="pointer"
+                  onClick={() => comingSoon()}
+                />
+              </Flex>
             </Flex>
-          </Flex>
-        </InnerContainer>
-      </Flex>
-    </Bar>
+          </InnerContainer>
+        </Flex>
+      </Bar>
+    </Flex>
   );
 };
 
