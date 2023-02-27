@@ -111,8 +111,8 @@ const DetailContainer = styled.div<{ src: string }>`
   padding-left: 27px;
   background: linear-gradient(
       74.83deg,
-      #ffffff 60.69%,
-      rgba(255, 255, 255, 0.901596) 80.02%,
+      #ffffff 62.69%,
+      rgba(255, 255, 255, 0.901596) 84.02%,
       rgba(255, 255, 255, 0) 136.23%
     ),
     url(${({ src }) => src}) no-repeat top right;
