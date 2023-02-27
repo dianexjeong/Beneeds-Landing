@@ -31,7 +31,6 @@ export const Section6 = () => {
                 <Text text="이번달에는" size={22.5} weight={500} height={160} />
                 <Text text="집 청소" size={22.5} weight={700} height={160} />
               </Flex>
-              <Space margin="42px 0px 0px 0px" />
               <Image src="/benefit-clean.svg" alt="집 청소" width={259} height={209} />
             </Card>
             <Card>
