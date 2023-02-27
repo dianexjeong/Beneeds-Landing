@@ -22,7 +22,7 @@ export const Section9 = () => {
             <Benefit
               subtitle="퇴근 후에도 깨끗한 환경을 위해"
               title="집 청소 이용권"
-              provide_com="미소 (miso)"
+              provide_com="청소연구소"
               summary1="월 1회 3시간"
               bg_img="/bg-clean.svg"
             />
@@ -47,12 +47,21 @@ export const Section9 = () => {
               title="전통주 서비스"
               provide_com="술마켓"
               summary1="월 1~2회 1~2병씩 제공"
+              bg_img="/bg-drink.svg"
             />
             <Benefit
               subtitle="다양한 취향과 취미를 가진 직원들을 위해"
               title="OTT/음악 구독권"
               provide_com="왓챠 / 웨이브 / 티빙 / 멜론"
               summary1="플랫폼 별로 다르기 때문에 상세정보 확인"
+              bg_img="/bg-ott.svg"
+            />
+            <Benefit
+              subtitle="직원이 원하는 선물을 직접 고르는"
+              title="이달의 선물"
+              summary1="선물 리스트 중"
+              summary2="원하는 선물을 하나 선택 후 수령"
+              bg_img="/bg-gift.svg"
             />
           </Flex>
         </InnerContainer>
