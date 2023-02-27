@@ -18,56 +18,49 @@ export const Benefit = ({ subtitle, title, provide_com, summary1, summary2, bg_i
     <>
       <Card>
         <Flex align="center" justify="space-between" width="100%">
-          <Space margin="36px 0px 0px 0px" />
-          <Text text={`${subtitle}`} size={15.75} weight={500} spacing={-0.5} height={140} color="#7A7CEA" />
+          <Space margin="32px 0px 0px 0px" />
+          <Text text={`${subtitle}`} size={14} weight={500} spacing={-0.4} height={140} color="#7A7CEA" />
           <Space margin="11.75px 0px 0px 0px" />
-          <Text text={`${title}`} size={27} weight={600} spacing={-0.3} color={palette.Black} />
-          <Space margin="27px 0px 0px 0px" />
+          <Text text={`${title}`} size={24} weight={600} spacing={-0.3} color={palette.Black} />
+          <Space margin="24px 0px 0px 0px" />
           <Flex>
             <Line />
             <DetailContainer src={`${bg_img}`}>
-              <Flex direction="column" justify="flex-start" align="flex-start" gap={17} height="">
+              <Flex direction="column" justify="flex-start" align="flex-start" gap={15} height="">
                 <Space margin="10px 0px 0px 0px" />
                 {provide_com ? (
-                  <Flex direction="row" gap={45} width="" height="">
-                    <Text
-                      text="제공업체"
-                      size={13.5}
-                      weight={600}
-                      spacing={-0.5}
-                      height={140}
-                      color={palette.Gray600}
-                    />
+                  <Flex direction="row" gap={40} width="" height="">
+                    <Text text="제공업체" size={12} weight={600} spacing={-0.4} height={140} color={palette.Gray600} />
                     <Text
                       text={`${provide_com}`}
-                      size={13.5}
+                      size={12}
                       weight={400}
                       height={140}
-                      spacing={-0.5}
+                      spacing={-0.4}
                       color={palette.Gray800}
                     />
                   </Flex>
                 ) : (
                   <></>
                 )}
-                <Flex direction="row" gap={45} width="" height="" justify="flex-start" align="flex-start">
-                  <Text text="상세정보" size={13.5} weight={600} spacing={-0.5} height={140} color={palette.Gray600} />
+                <Flex direction="row" gap={40} width="" height="" justify="flex-start" align="flex-start">
+                  <Text text="상세정보" size={12} weight={600} spacing={-0.4} height={140} color={palette.Gray600} />
                   <Flex height="" width="" justify="flex-start" align="flex-start">
                     <Text
                       text={`${summary1}`}
-                      size={13.5}
+                      size={12}
                       weight={400}
                       height={140}
-                      spacing={-0.5}
+                      spacing={-0.4}
                       color={palette.Gray800}
                     />
                     {summary2 ? (
                       <Text
                         text={`${summary2}`}
-                        size={13.5}
+                        size={12}
                         weight={400}
                         height={140}
-                        spacing={-0.5}
+                        spacing={-0.4}
                         color={palette.Gray800}
                       />
                     ) : (
@@ -86,19 +79,17 @@ export const Benefit = ({ subtitle, title, provide_com, summary1, summary2, bg_i
 
 const Card = styled.div`
   aspect-ratio: 394/249;
-  width: 30vw;
-  min-width: 394px;
-  max-width: 443px;
+  width: 394px;
   background: white;
-  box-shadow: 0px 2.25px 13.5px rgba(0, 0, 0, 0.08);
-  border-radius: 13.5px;
+  box-shadow: 0px 2.25px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
   overflow: hidden;
 `;
 
 const Line = styled.div`
-  width: 88%;
+  width: 346px;
   height: 0px;
-  border: 0.6px solid rgba(208, 208, 208, 0.5);
+  border: 0.6px solid rgba(208, 208, 208, 0.4);
 `;
 
 const DetailContainer = styled.div<{ src: string }>`
@@ -116,5 +107,5 @@ const DetailContainer = styled.div<{ src: string }>`
       rgba(255, 255, 255, 0) 136.23%
     ),
     url(${({ src }) => src}) no-repeat top right;
-  border-radius: 0px 0px 13.5px 0px;
+  border-radius: 0px 0px 12px 0px;
 `;

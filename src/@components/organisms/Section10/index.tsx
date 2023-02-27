@@ -8,14 +8,14 @@ export const Section10 = () => {
     <>
       <Bg>
         <InnerContainer>
-          <Space margin="158px 0px 0px 0px" />
+          <Space margin="140px 0px 0px 0px" />
           <span>
-            <Text text="우리 회사" weight={600} color={palette.Black} size={42.75} height={160} />
-            <Text text=" 복지의 만족도" weight={600} color="#7A7CEA" size={42.75} height={160} />
-            <Text text="를" weight={600} color={palette.Black} size={42.75} height={160} />
+            <Text text="우리 회사" weight={600} color={palette.Black} size={38} height={160} />
+            <Text text=" 복지의 만족도" weight={600} color="#7A7CEA" size={38} height={160} />
+            <Text text="를" weight={600} color={palette.Black} size={38} height={160} />
           </span>
-          <Text text="올리고 싶다면?" weight={600} color={palette.Black} size={42.75} height={160} />
-          <Space margin="46px 0px 0px 0px" />
+          <Text text="올리고 싶다면?" weight={600} color={palette.Black} size={38} height={160} />
+          <Space margin="42px 0px 0px 0px" />
           <NotifyButton
             background="linear-gradient(232.65deg, #6D7BFF -7.36%, #81CFD8 112.81%)"
             textColor={palette.White}
@@ -28,16 +28,14 @@ export const Section10 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 99vh;
-  min-height: 619px;
+  height: 620px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
 const InnerContainer = styled.div`
-  width: 62.5vw;
-  min-width: 800px;
+  width: 800px;
   height: 100%;
   display: flex;
   flex-direction: column;

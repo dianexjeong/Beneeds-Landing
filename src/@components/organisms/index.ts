@@ -8,4 +8,4 @@ export * from "./Section07";
 export * from "./Section08";
 export * from "./Section09";
 export * from "./Section10";
-export * from "./Section11";
+export * from "./FAQ";

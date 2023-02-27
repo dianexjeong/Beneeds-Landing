@@ -12,7 +12,7 @@ export const Navigation = () => {
       <Flex justify="center">
         <InnerContainer>
           <Flex direction="row" justify="space-between">
-            <Image src={"/logo.svg"} alt={"Beneeds logo"} width={60} height={13} />
+            <Image src={"/logo.svg"} alt={"Beneeds logo"} width={79} height={14.22} />
             <Flex direction="row" gap={16} justify="flex-end">
               <Text
                 text="로그인"
@@ -49,11 +49,6 @@ const Bar = styled.header`
 
 const InnerContainer = styled.div`
   position: relative;
-  width: 62.5vw;
-  min-width: 800px;
+  width: 800px;
   height: 100%;
 `;
-
-const ButtonContainer = styled.div``;
-
-const LoginContainer = styled.span``;

@@ -8,15 +8,16 @@ export const Section9 = () => {
       <Bg>
         <InnerContainer>
           <Flex height="">
+            <Space margin="126px 0px 0px 0px" />
             <Text text="직원들은 복지를" weight={600} size={32} color="black" height={140} />
             <Text text="달마다 선택해서 받아요" weight={600} size={32} color="black" height={140} />
-            <Space margin="24px 0px 0px 0px" />
+            <Space margin="20px 0px 0px 0px" />
             <span>
-              <Text text="직원 한 명당 5만원의 금액으로 " weight={500} size={19} color="black" height={140} />
-              <Text text="각자 원하는 복지" weight={600} size={19} color="#767DEE" height={140} />
-              <Text text="를 누릴 수 있도록" weight={500} size={19} color="black" height={140} />
+              <Text text="직원 한 명당 5만원의 금액으로 " weight={500} size={18} color="black" height={140} />
+              <Text text="각자 원하는 복지" weight={600} size={18} color="#767DEE" height={140} />
+              <Text text="를 누릴 수 있도록" weight={500} size={18} color="black" height={140} />
             </span>
-            <Space margin="60px 0px 0px 0px" />
+            <Space margin="58px 0px 0px 0px" />
           </Flex>
           <Flex direction="row" justify="center" align="center" wrap="wrap" gap={10} height="" width="">
             <Benefit
@@ -72,20 +73,17 @@ export const Section9 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 196vh;
-  min-height: 1227px;
-  max-height: 1380px;
+  height: 1227px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
 const InnerContainer = styled.div`
-  width: 62.5vw;
-  min-width: 800px;
+  width: 800px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 `;

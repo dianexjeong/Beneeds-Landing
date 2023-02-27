@@ -14,12 +14,12 @@ export const Section4 = () => {
                 gradient={true}
                 background="linear-gradient(100.98deg, #C579DB 0.89%, #7C83E9 38.04%)"
                 weight={700}
-                size={36}
+                size={32}
                 height={160}
               />
-              <Text text="을 위해," weight={700} size={36} height={160} color={palette.Navy200} />
+              <Text text="을 위해," weight={700} size={32} height={160} color={palette.Navy200} />
             </span>
-            <Text text="직접 선택하는 개인화 복지 제공" weight={700} size={36} height={160} color={palette.Navy200} />
+            <Text text="직접 선택하는 개인화 복지 제공" weight={700} size={32} height={160} color={palette.Navy200} />
           </Flex>
         </InnerContainer>
       </Bg>
@@ -29,15 +29,13 @@ export const Section4 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 53vh;
-  min-height: 334px;
+  height: 459px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
 const InnerContainer = styled.div`
-  width: 62.5vw;
-  min-width: 800px;
+  width: 800px;
   height: 100%;
 `;

@@ -8,44 +8,45 @@ export const Section7 = () => {
     <>
       <Bg>
         <InnerContainer>
-          <Flex>
+          <Flex justify="flex-start">
+            <Space margin="119px 0px 0px 0px" />
             <span>
-              <Image src="/logoBlue.svg" alt="Beneeds logo" width={153} height={27} />
-              <Text text="는" color="#767DEE" weight={600} size={36} height={140} />
+              <Image src="/logoBlue.svg" alt="Beneeds logo" width={136.72} height={24} />
+              <Text text="는" color="#767DEE" weight={600} size={32} height={140} />
             </span>
-            <Text text="이런 기업에게 좋아요!" color="#767DEE" weight={600} size={36} height={140} />
+            <Text text="이런 기업에게 좋아요!" color="#767DEE" weight={600} size={32} height={140} />
             <Space margin="81px 0px 0px 0px" />
             <Flex justify="flex-start" align="flex-start" height="">
-              <Text text="직원이 만족할 수 있는" weight={600} size={29.25} height={160} color={palette.Navy200} />
-              <Text text="복지를 제공하고 싶은 회사" weight={600} size={29.25} height={160} color={palette.Navy200} />
+              <Text text="직원이 만족할 수 있는" weight={600} size={26} height={160} color={palette.Navy200} />
+              <Text text="복지를 제공하고 싶은 회사" weight={600} size={26} height={160} color={palette.Navy200} />
             </Flex>
-            <Space margin="50px 0px 0px 0px" />
+            <Space margin="44px 0px 0px 0px" />
             <Line />
-            <Space margin="68px 0px 0px 0px" />
+            <Space margin="61px 0px 0px 0px" />
             <Flex justify="flex-end" align="flex-end" height="">
               <Text
                 text="새롭게 복지를 도입하고 싶은 회사"
                 weight={600}
-                size={29.25}
+                size={26}
                 height={160}
                 color={palette.Navy200}
               />
             </Flex>
-            <Space margin="68px 0px 0px 0px" />
+            <Space margin="61px 0px 0px 0px" />
             <Line />
-            <Space margin="50px 0px 0px 0px" />
+            <Space margin="44px 0px 0px 0px" />
             <Flex justify="flex-start" align="flex-start" height="">
               <Text
                 text="어떤 복지가 우리 직원들에게 맞는지"
                 weight={600}
-                size={29.25}
+                size={26}
                 height={160}
                 color={palette.Navy200}
               />
-              <Text text="고민이 되는 회사" weight={600} size={29.25} height={160} color={palette.Navy200} />
+              <Text text="고민이 되는 회사" weight={600} size={26} height={160} color={palette.Navy200} />
             </Flex>
-            <Space margin="133px 0px 0px 0px" />
-            <Text text="레이아웃 및 문구 고민중~ 윤선언니 최고" color="#DADADA" size={31.5} height={160} weight={600} />
+            <Space margin="118px 0px 0px 0px" />
+            <Text text="레이아웃 및 문구 고민중~ 윤선언니 최고" color="#DADADA" size={28} height={160} weight={600} />
           </Flex>
         </InnerContainer>
       </Bg>
@@ -55,17 +56,14 @@ export const Section7 = () => {
 
 const Bg = styled.div`
   width: 100vw;
-  height: 156vh;
-  min-height: 978px;
-  max-height: 1100px;
+  height: 1187px;
   display: flex;
   flex-direction: row;
   justify-content: center;
 `;
 
 const InnerContainer = styled.div`
-  width: 62.5vw;
-  min-width: 800px;
+  width: 800px;
   height: 100%;
   display: flex;
   flex-direction: column;
