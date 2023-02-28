@@ -28,7 +28,7 @@ export const Section4 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 459px;
   display: flex;
   flex-direction: row;

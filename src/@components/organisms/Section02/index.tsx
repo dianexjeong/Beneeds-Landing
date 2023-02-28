@@ -49,7 +49,7 @@ export const Section2 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 500px;
   display: flex;
   flex-direction: row;

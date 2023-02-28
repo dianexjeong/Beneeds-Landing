@@ -19,7 +19,6 @@ const App = ({ Component, pageProps }: AppProps) => {
       </Head>
       <Weblayout>
         <GlobalStyle />
-
         <InnerContainer>
           <Component {...pageProps} />
         </InnerContainer>
@@ -32,4 +31,8 @@ export default App;
 
 const InnerContainer = styled.div`
   margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;

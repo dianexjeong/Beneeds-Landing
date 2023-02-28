@@ -46,7 +46,7 @@ export const Section1 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 588px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f7ff 100%);
   display: flex;

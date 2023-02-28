@@ -36,7 +36,7 @@ export const FAQ = () => {
   );
 };
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 710px;
   background: rgba(122, 124, 234, 0.08);
   display: flex;

@@ -51,7 +51,7 @@ export const Section6 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 730px;
   display: flex;
   flex-direction: row;

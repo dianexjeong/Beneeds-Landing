@@ -72,7 +72,7 @@ export const Section9 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 1227px;
   display: flex;
   flex-direction: row;

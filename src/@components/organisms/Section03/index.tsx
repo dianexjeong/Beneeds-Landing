@@ -36,7 +36,7 @@ export const Section3 = () => {
 };
 
 const Bg = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 369px;
   display: flex;
   flex-direction: row;
