@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styled from "styled-components";
 import { Space, Text, Flex } from "~/@components/atoms";
 import { NotifyButton } from "~/@components/molecules";
@@ -7,6 +8,9 @@ export const Section1 = () => {
   return (
     <Bg>
       <InnerContainer>
+        <ImageContainer>
+          <Image src="/mockup.svg" alt="mockup" width={721} height={947} />
+        </ImageContainer>
         <Space margin="171px 0px 0px 0px" />
         <Flex direction="column" align="flex-start" justify="center" height="">
           <Text text="새로운 복지의 시작" size={12} weight={500} color="#767DEE" height={160} />
@@ -47,7 +51,7 @@ export const Section1 = () => {
 
 const Bg = styled.div`
   width: 100%;
-  height: 588px;
+  height: 631px;
   background: linear-gradient(180deg, #ffffff 0%, #f7f7ff 100%);
   display: flex;
   flex-direction: row;
@@ -61,4 +65,12 @@ const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  position: relative;
+`;
+
+const ImageContainer = styled.div`
+  position: absolute;
+  top: -264px;
+  left: 500px;
+  overflow-x: hidden;
 `;

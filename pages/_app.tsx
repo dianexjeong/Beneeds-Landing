@@ -3,6 +3,7 @@ import Head from "next/head";
 import GlobalStyle from "~/@styles/GlobalStyle";
 import { Weblayout } from "~/@components/template";
 import styled from "styled-components";
+import { Navigation } from "~/@components/molecules";
 
 declare global {
   interface Window {
@@ -18,6 +19,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <title>Beneeds 베니즈</title>
       </Head>
       <Weblayout>
+        <Navigation />
         <GlobalStyle />
         <InnerContainer>
           <Component {...pageProps} />
@@ -35,4 +37,5 @@ const InnerContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
 `;

@@ -12,7 +12,7 @@ export const Section3 = () => {
             <Flex direction="row" justify="center" align="flex-end" gap={8} height="">
               <Flex justify="center" align="center" width="" height="">
                 <Image src="/phone.svg" alt="phone" width={34} height={54} />
-                <Text text="전화영어부터" size={18} weight={500} height={160} color={palette.White} />
+                <Text text="전화영어부터" size={18} weight={500} height={160} color={palette.Navy100} />
               </Flex>
               <Flex justify="center" align="center" width="" height="">
                 <Line />
@@ -20,12 +20,12 @@ export const Section3 = () => {
               </Flex>
               <Flex justify="center" align="center" width="" height="">
                 <Image src="/watermelon.svg" alt="watermelon" width={34} height={54} />
-                <Text text="과일배송까지" size={18} weight={500} height={160} color={palette.White} />
+                <Text text="과일배송까지" size={18} weight={500} height={160} color={palette.Navy100} />
               </Flex>
             </Flex>
             <span>
               <Text text="같은 일을 해도 " size={28} color={palette.White} weight={600} height={160} />
-              <Text text="좋아하는건 " size={28} color="#666EF0" weight={600} height={160} />
+              <Text text="좋아하는건 " size={28} color="#5E6EFF" weight={600} height={160} />
               <Text text="다르니까!" size={28} color={palette.White} weight={600} height={160} />
             </span>
           </Flex>
@@ -40,7 +40,13 @@ const Bg = styled.div`
   height: 369px;
   display: flex;
   flex-direction: row;
-  background: linear-gradient(102.17deg, rgba(144, 146, 254, 0.65) 37.87%, rgba(145, 166, 255, 0.65) 72.69%);
+  background: linear-gradient(
+    99.86deg,
+    rgba(123, 143, 255, 0.65) 6.97%,
+    rgba(119, 171, 240, 0.65) 42.6%,
+    rgba(118, 185, 232, 0.65) 92.27%,
+    rgba(115, 208, 220, 0.65) 117.42%
+  );
   justify-content: center;
 `;
 

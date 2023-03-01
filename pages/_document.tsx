@@ -42,6 +42,10 @@ class MyDocument extends Document {
             type="text/css"
             href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css"
           />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&amp;display=swap"
+            rel="stylesheet"
+          />
         </Head>
         <body>
           <script>0</script>

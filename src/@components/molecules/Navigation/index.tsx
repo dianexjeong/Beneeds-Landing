@@ -8,7 +8,7 @@ export const Navigation = () => {
   };
 
   return (
-    <Flex width="" height="" justify="flex-start">
+    <>
       <Bar>
         <Flex justify="center">
           <InnerContainer>
@@ -36,7 +36,7 @@ export const Navigation = () => {
           </InnerContainer>
         </Flex>
       </Bar>
-    </Flex>
+    </>
   );
 };
 
@@ -50,7 +50,6 @@ const Bar = styled.header`
 `;
 
 const InnerContainer = styled.div`
-  position: relative;
   width: 800px;
   height: 100%;
 `;

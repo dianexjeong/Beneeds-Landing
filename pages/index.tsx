@@ -1,4 +1,3 @@
-import { Navigation } from "~/@components/molecules";
 import {
   Section1,
   Section2,
@@ -10,13 +9,11 @@ import {
   Section8,
   Section9,
   Section10,
-  FAQ,
 } from "~/@components/organisms";
 
 const Home = () => {
   return (
     <>
-      <Navigation />
       <Section1 />
       <Section2 />
       <Section3 />
@@ -27,7 +24,6 @@ const Home = () => {
       <Section8 />
       <Section9 />
       <Section10 />
-      <FAQ />
     </>
   );
 };
