@@ -10,6 +10,7 @@ export const commonStyle = css`
   body {
     line-height: 1.5;
     background-color: #ffffff;
+    overflow-x: hidden;
   }
   margin: 0;
 	padding: 0;
